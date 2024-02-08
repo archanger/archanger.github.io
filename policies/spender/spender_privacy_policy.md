@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Spender Privacy Policy"
+permalink: /policies/spender
 ---
 
 # Privacy Policy
