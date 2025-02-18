@@ -14,7 +14,10 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
   const [theme, setTheme] = useState('auto')
   useEffect(() => {
     const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    document.documentElement.classList.toggle('dark', isDark)
+    console.log('isDark', isDark)
+    if (isDark) {
+      document.documentElement.classList.add('dark')
+    }
   }, [])
 
   return (
