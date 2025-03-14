@@ -5,12 +5,66 @@ export const HeroSection = () => {
         <h1 className='text-5xl leading-tight font-bold'>
           My name is <span className='text-primary'>Kirill</span>
         </h1>
-        <p className='text-secondary mt-4 text-lg'>
+        <p className='mt-4 text-lg leading-relaxed text-gray-500'>
           I am a professional{' '}
-          <span className='text-primary text-2xl font-bold'>
+          <span className='text-primary text-xl font-semibold'>
             Software Engineer
           </span>{' '}
-          with more than 10 years of experience
+          with over{' '}
+          <span className='text-primary text-xl font-semibold'>10 years</span>{' '}
+          of experience in{' '}
+          <span className='text-primary text-xl font-semibold'>iOS</span>{' '}
+          application development. My journey in IT began in 2006, exploring
+          Delphi, C, and PHP before deepening my expertise in C/C++ and Java.
+          Transitioning into iOS development, I have worked extensively with
+          modern technologies and{' '}
+          <span className='text-primary font-semibold'>
+            best development practices
+          </span>
+          .
+          <br />
+          <br />I have strong experience in{' '}
+          <span className='text-primary font-semibold'>Agile</span>{' '}
+          environments, focusing on{' '}
+          <span className='text-primary font-semibold'>clean architecture</span>
+          ,
+          <span className='text-primary font-semibold'>
+            {' '}
+            scalable solutions
+          </span>
+          , and{' '}
+          <span className='text-primary font-semibold'>
+            efficient collaboration
+          </span>
+          .
+          <br />
+          <br />
+          Additionally, I have a keen interest in{' '}
+          <span className='text-primary font-semibold'>
+            web development (both front-end and back-end)
+          </span>{' '}
+          and{' '}
+          <span className='text-primary font-semibold'>
+            cross-platform technologies
+          </span>
+          .
+          <br />
+          <br />I am also a strong advocate of{' '}
+          <span className='text-primary font-semibold'>
+            Domain-Driven Design (DDD)
+          </span>
+          , applying its principles to build scalable, maintainable, and
+          well-structured applications. I actively promote best practices in{' '}
+          <span className='text-primary font-semibold'>DDD</span> and enjoy
+          mentoring others in leveraging domain modeling and strategic design.
+          <br />
+          <br />
+          Beyond coding, I am passionate about{' '}
+          <span className='text-primary font-semibold'>mentoring</span>,{' '}
+          <span className='text-primary font-semibold'>sharing knowledge</span>,
+          and{' '}
+          <span className='text-primary font-semibold'>helping teams grow</span>
+          .
         </p>
       </div>
 
