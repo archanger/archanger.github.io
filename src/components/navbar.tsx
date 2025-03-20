@@ -4,7 +4,7 @@ import ThemeSwitcher from './theme-switcher'
 
 export const Navbar = () => {
   return (
-    <nav className='fixed top-6 flex w-full items-center justify-end p-4'>
+    <nav className='sticky top-6 flex w-full items-center justify-end p-4 md:fixed'>
       <div className='flex items-center space-x-4 rounded-sm p-4 backdrop-blur-lg'>
         <a
           href='https://www.linkedin.com/in/kirill-chuyanov/'
