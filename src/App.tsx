@@ -1,11 +1,12 @@
-import { HeroSection } from '@/components/hero-section'
+import Content from '@/components/Content'
 import { Navbar } from '@/components/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 
 const App = () => (
   <ThemeProvider>
     <Navbar />
-    <HeroSection />
+    <Content />
+    {/* <HeroSection /> */}
   </ThemeProvider>
 )
 

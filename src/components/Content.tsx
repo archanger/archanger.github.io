@@ -1,3 +1,17 @@
+import Hero from '@/components/Hero'
+import TechStack from './TechStack'
+
+const Content = () => {
+  return (
+    <main className='m-auto flex max-w-4xl flex-col gap-32 py-16 align-middle'>
+      <Hero />
+      <TechStack />
+    </main>
+  )
+}
+
+export default Content
+
 export const HeroSection = () => {
   return (
     <main className='text-text flex min-h-screen flex-col items-center justify-center p-8 md:flex-row'>

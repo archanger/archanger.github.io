@@ -1,22 +1,5 @@
 @import 'tailwindcss';
 
-@variant dark (&:where(.dark, .dark *));
-
-@theme {
-  --default-font-family: 'Fira Code', monospace;
-  --color-background: #ffffff;
-  --color-text: #000000;
-  --color-primary: #4b5563;
-  --color-secondary: #6b7280;
-  --color-accent: #1f2937;
-}
-
-@layer base {
-  .dark {
-    --color-background: #111827;
-    --color-text: #f9fafb;
-    --color-primary: #e5e7eb;
-    --color-secondary: #9ca3af;
-    --color-accent: #d1d5db;
-  }
+@theme inline {
+  --color-background: var(--color-slate-900);
 }
