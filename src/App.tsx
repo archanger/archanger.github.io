@@ -1,10 +1,9 @@
 import Content from '@/components/Content'
-import { Navbar } from '@/components/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 
 const App = () => (
   <ThemeProvider>
-    <Navbar />
+    {/* <Navbar /> */}
     <Content />
     {/* <HeroSection /> */}
   </ThemeProvider>

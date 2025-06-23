@@ -23,8 +23,26 @@ const Button = ({
   children,
   className,
   variant,
+  href,
+  download,
 }: ButtonHTMLAttributes<HTMLButtonElement> &
-  VariantProps<typeof buttonVariants>) => {
+  VariantProps<typeof buttonVariants> & {
+    href?: string
+    download?: boolean | string
+  }) => {
+  if (href) {
+    return (
+      <a
+        href={href}
+        target='_blank'
+        rel='noopener noreferrer'
+        download={download}
+        className={cn(buttonVariants({ variant }), className)}
+      >
+        {children}
+      </a>
+    )
+  }
   return (
     <button className={cn(buttonVariants({ variant }), className)}>
       {children}
