@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+@layer base {
+  ul {
+    @apply ps-3;
+  }
+}
+
 @theme inline {
   --color-background: var(--color-slate-900);
 }

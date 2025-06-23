@@ -5,7 +5,7 @@ import { DownloadIcon } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className='flex flex-col items-center justify-center gap-12 text-center'>
+    <section className='flex flex-col items-center gap-12 text-center'>
       <img className='w-3xs' src='/ava.png' alt='Avatar' />
       <p className='text-6xl/[68px] font-bold text-slate-50'>Hi, I am Kirill</p>
       <p className='m-auto text-3xl/[38x] text-slate-50'>

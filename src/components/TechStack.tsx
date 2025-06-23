@@ -12,8 +12,10 @@ import Vite from '@/assets/vite.svg?react'
 
 const TechStack = () => {
   return (
-    <section className='flex flex-col items-center justify-center gap-12 text-center'>
-      <p className='text-4xl/[44px] text-neutral-50'>TECH STACK</p>
+    <section className='flex flex-col items-center gap-12 text-center'>
+      <h2 className='text-4xl/[44px] tracking-wider text-neutral-50'>
+        TECH STACK
+      </h2>
       <div className='flex flex-wrap items-center justify-center gap-6'>
         <Swift />
         <Ios />
