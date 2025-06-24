@@ -28,10 +28,7 @@ const Navbar = () => {
         'left-1/2 -translate-x-1/2'
       )}
     >
-      <motion.ul
-        // style={{ scale }}
-        className='flex grow justify-center px-8 md:gap-8 lg:gap-16'
-      >
+      <ul className='flex grow justify-center px-8 md:gap-8 lg:gap-16'>
         {sections.map(({ id, label }) => (
           <li
             key={id}
@@ -45,7 +42,7 @@ const Navbar = () => {
             </ScrollLink>
           </li>
         ))}
-      </motion.ul>
+      </ul>
     </motion.nav>
   )
 }

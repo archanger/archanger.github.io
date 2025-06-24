@@ -1,8 +1,8 @@
+import Experience from '@/components/Experience'
 import Hero from '@/components/Hero'
-import Experience from './Experience'
+import Projects from '@/components/Projects'
+import TechStack from '@/components/TechStack'
 import Navbar from './Navbar'
-import Projects from './Projects'
-import TechStack from './TechStack'
 
 const Content = () => {
   return (
