@@ -1,42 +1,53 @@
-import { ExternalLinkIcon } from 'lucide-react'
-import LinkedIn from '../assets/linkedin.svg?react'
-import ThemeSwitcher from './theme-switcher'
+import { useFramerScrollSpy } from '@/hooks/useFramerScrollSpy'
+import { cn } from '@/lib/utils'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import ScrollLink from './ScrollLink'
 
-export const Navbar = () => {
+const sections = [
+  { id: 'hero', label: 'HOME' },
+  { id: 'tech-stack', label: 'TECH STACK' },
+  { id: 'projects', label: 'PROJECTS' },
+  { id: 'experience', label: 'EXPERIENCE' },
+]
+
+const Navbar = () => {
+  const { scrollY } = useScroll()
+  const active = useFramerScrollSpy()
+
+  const height = useTransform(scrollY, [0, 100], [64, 48])
+  const fontSize = useTransform(scrollY, [0, 100], ['24px', '16px'])
+  const lineHeight = useTransform(scrollY, [0, 100], ['32px', '24px'])
+
   return (
-    <nav className='sticky top-6 flex w-full items-center justify-end p-4 md:fixed'>
-      <div className='flex items-center space-x-4 rounded-sm p-4 backdrop-blur-lg'>
-        <a
-          href='https://codedriven.thinkific.com/'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-primary flex items-center border-b border-transparent align-middle hover:border-current'
-          aria-label='Courses'
-        >
-          Courses
-          <ExternalLinkIcon className='-mt-1.5 ml-1' size={16} />
-        </a>
-        <a
-          href='https://www.linkedin.com/in/kirill-chuyanov/'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-primary flex items-center border-b border-transparent p-1 align-middle hover:border-current'
-          aria-label='LinkedIn'
-        >
-          <LinkedIn className='-mt-[2px] size-4' />
-          <ExternalLinkIcon className='-mt-1.5 ml-1' size={16} />
-        </a>
-        <a
-          href='https://medium.com/@archanger'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-primary flex items-center border-b border-transparent align-middle hover:border-current'
-          aria-label='Blog'
-        >
-          Blog <ExternalLinkIcon className='-mt-1.5 ml-1' size={16} />
-        </a>
-        <ThemeSwitcher />
-      </div>
-    </nav>
+    <motion.nav
+      style={{ height, fontSize, lineHeight }}
+      className={cn(
+        'fixed top-8 z-10 h-16 flex-col overflow-hidden rounded-full bg-slate-300/10 text-2xl/[32px] tracking-wider text-neutral-50',
+        'shadow-[0_2px_8px_rgba(255,255,255,0.25)] inset-shadow-[0.5px_1px_1px_rgba(255,255,255,0.9),-0.5px_-1px_1px_rgba(255,255,255,1)] backdrop-blur-[10px]',
+        'hidden md:flex md:w-3xl lg:w-4xl',
+        'left-1/2 -translate-x-1/2'
+      )}
+    >
+      <motion.ul
+        // style={{ scale }}
+        className='flex grow justify-center px-8 md:gap-8 lg:gap-16'
+      >
+        {sections.map(({ id, label }) => (
+          <li
+            key={id}
+            className={`flex items-stretch duration-300 ${active === id ? 'bg-slate-950/50' : ''}`}
+          >
+            <ScrollLink
+              to={id}
+              aria-current={active === id ? 'page' : undefined}
+            >
+              {label}
+            </ScrollLink>
+          </li>
+        ))}
+      </motion.ul>
+    </motion.nav>
   )
 }
+
+export default Navbar

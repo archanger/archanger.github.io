@@ -2,7 +2,10 @@ import Project from './Project'
 
 const Projects = () => {
   return (
-    <section className='flex flex-col items-center gap-12 text-center'>
+    <section
+      id='projects'
+      className='flex scroll-mt-32 flex-col items-center gap-12 text-center'
+    >
       <h2 className='text-4xl/[44px] tracking-wider text-neutral-50'>
         PROJECTS
       </h2>

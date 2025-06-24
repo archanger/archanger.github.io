@@ -7,7 +7,10 @@ import Place from './Place'
 
 const Experience = () => {
   return (
-    <section className='flex flex-col items-center gap-12'>
+    <section
+      id='experience'
+      className='flex scroll-mt-32 flex-col items-center gap-12'
+    >
       <h2 className='text-4xl/[44px] tracking-wider text-neutral-50'>
         EXPERIENCE
       </h2>
