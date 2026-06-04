@@ -16,11 +16,43 @@ const Experience = () => {
       </h2>
       <Place>
         <Place.Logo>
+          <Bolt />
+        </Place.Logo>
+        <Place.Position>Senior Software Engineer</Place.Position>
+        <Place.Company>Bolt</Place.Company>
+        <Place.Period>August 2025 - Present</Place.Period>
+        <Place.Body>
+          <p>
+            After some time away, I decided to return to Bolt when I saw a new
+            opportunity to contribute to a different part of the product. My
+            current focus is the Driver app, where I work on improving
+            performance, stability, and the architectural patterns that support
+            long-term development.
+          </p>
+          <br />
+          <p>
+            This work combines hands-on feature delivery with deeper technical
+            improvements: identifying bottlenecks, making key flows more
+            reliable, and helping the codebase evolve in a direction that is
+            easier for teams to build on.
+          </p>
+          <br />
+          <p>
+            I also continue to invest in the engineering culture around me
+            through mentoring, code reviews, and technical discussions. Hiring
+            remains part of my contribution as well, and I still enjoy
+            interviewing candidates and helping maintain a strong bar for the
+            team.
+          </p>
+        </Place.Body>
+      </Place>
+      <Place>
+        <Place.Logo>
           <XYB />
         </Place.Logo>
         <Place.Position>Senior Software Engineer</Place.Position>
         <Place.Company>XYB</Place.Company>
-        <Place.Period>March 2024 - Present</Place.Period>
+        <Place.Period>March 2024 - July 2025</Place.Period>
         <Place.Body>
           <p>
             I primarily contributed to the iOS codebase, focusing on
