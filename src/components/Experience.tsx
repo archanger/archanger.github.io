@@ -3,6 +3,7 @@ import Appreal from '@/assets/Appreal.svg?react'
 import Bolt from '@/assets/Bolt.svg?react'
 import Lazada from '@/assets/Lazada.svg?react'
 import XYB from '@/assets/XYB.svg?react'
+import { ExternalLinkIcon } from 'lucide-react'
 import Place from './Place'
 
 const Experience = () => {
@@ -39,10 +40,21 @@ const Experience = () => {
           <br />
           <p>
             I also continue to invest in the engineering culture around me
-            through mentoring, code reviews, and technical discussions. Hiring
-            remains part of my contribution as well, and I still enjoy
-            interviewing candidates and helping maintain a strong bar for the
-            team.
+            through mentoring, code reviews, and technical discussions.{' '}
+            <a
+              className='text-cyan-400 transition-colors hover:text-cyan-300 hover:underline hover:underline-offset-4 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-400'
+              href='https://bolt.eu/en/careers/positions/?utm_source=NwY6n6r1l1'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Hiring remains part of my contribution as well
+              <ExternalLinkIcon
+                aria-hidden='true'
+                className='ml-1 inline size-4 align-text-bottom'
+              />
+            </a>
+            , and I still enjoy interviewing candidates and helping maintain a
+            strong bar for the team.
           </p>
         </Place.Body>
       </Place>
